@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey"
+    android:orientation="vertical"
+    tools:context=".Sodiachi">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarsodiachi"
+        app:title="Chọn địa chỉ nhận hàng"
+        android:background="#f5f5f5"
+        app:titleTextColor="#111111"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+    <Button
+        android:id="@+id/themdiachi"
+        android:text="Thêm địa chỉ mới                 + "
+        android:layout_marginTop="5dp"
+        android:textColor="#CF3808"
+        android:textSize="20dp"
+        android:background="@drawable/backbuton"
+        android:layout_weight="0.7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <ListView
+        android:id="@+id/listdiachi"
+        android:layout_marginTop="10dp"
+        android:layout_weight="8.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </ListView>
+</LinearLayout>

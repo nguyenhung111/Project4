@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Admin.Themsanpham">
+    <androidx.appcompat.widget.Toolbar
+        app:titleTextColor="#EE0808"
+        android:background="#FDF6F6"
+        app:title="Thêm sản phẩm"
+        android:id="@+id/toolthemSP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Tên sản phẩm"/>
+            <EditText
+                android:id="@+id/edttensp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="25dp"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="Giá sản phẩm"/>
+            <EditText
+                android:id="@+id/edtgiasp"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Link hình ảnh"/>
+            <EditText
+                android:id="@+id/edthinhanh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="25dp"
+                android:layout_width="100dp"
+                android:inputType="number"
+                android:layout_height="match_parent"
+                android:text="Số lượng "/>
+            <EditText
+                android:inputType="number"
+                android:id="@+id/edtsoluong"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="25dp"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="Mô tả"/>
+            <EditText
+                android:id="@+id/edtmota"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="25dp"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="Loại sản phẩm"/>
+            <EditText
+                android:id="@+id/edtloaisp"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnThemsp"
+            android:layout_margin="20dp"
+            android:text="Thêm sản phẩm"
+            android:background="@drawable/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mystore">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".TimKiem.TaiKhoan"></activity>
+        <activity android:name=".Admin.Themsanpham" />
+        <activity android:name=".Admin.Thongke" />
+        <activity android:name=".Admin.Donhang" />
+        <activity android:name=".Admin.QuanLyDonHang" />
+        <activity android:name=".Fragment.Updatesanpham" />
+        <activity android:name=".QuanLySanPham" />
+        <activity android:name=".Themdiachi" />
+        <activity android:name=".Sodiachi" />
+        <activity android:name=".Model.Dathang" />
+        <activity android:name=".DanhMuc" />
+        <activity android:name=".TimKiem.TimKiem" />
+        <activity android:name=".DangNhap.Login" />
+        <activity android:name=".Giohang" />
+        <activity android:name=".Fragment.AllPC" />
+        <activity android:name=".Fragment.AllLaptop" />
+        <activity android:name=".Chitietsanpham" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
